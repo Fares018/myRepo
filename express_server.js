@@ -23,8 +23,6 @@ let globalVar;
 
 app.post("/", (req, res) => {
     globalVar = req.body;
-
-    console.log(globalVar);
     res.send(globalVar);
 });
 
@@ -35,10 +33,8 @@ app.post("/", (req, res) => {
  */
 app.get("/", (req, res) => {
     if (typeof globalVar === "undefined") {
-        console.log(globalVar);
         res.send("name is undefined, please call Post request first to assign a value to name!");
     } else {
-        // console.log(globalVar);
         res.send(`${globalVar.name} Submitted Successfully!`);
     }
 });
