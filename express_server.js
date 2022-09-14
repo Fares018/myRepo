@@ -21,7 +21,7 @@ app.use(
 
 let globalVar;
 
-let a = " hwllo";
+let = " hwllo";
 
 app.post("/", (req, res) => {
     globalVar = req.body;
