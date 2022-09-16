@@ -18,16 +18,13 @@ app.use(
  * @function post
  * get whatever the client send and resend it back
  */
-
 let globalVar;
-
-let = " hwllo";
+let 
 
 app.post("/", (req, res) => {
     globalVar = req.body;
     res.send(globalVar);
 });
-
 /**
  * @function get
  * get client name and resend it back
@@ -40,7 +37,6 @@ app.get("/", (req, res) => {
         res.send(`${globalVar.name} Submitted Successfully!`);
     }
 });
-
 /**
  * @function listen
  * tell server to listen on port 3000
