@@ -1,4 +1,4 @@
 FROM node:alpine
 COPY . /app
 WORKDIR /app
-CMD node express_server.js
+CMD node server/express_server.js
