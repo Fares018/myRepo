@@ -18,6 +18,7 @@ app.use(
  * @function post
  * get whatever the client send and resend it back
  */
+
 let globalVar;
 
 app.post("/", (req, res) => {
