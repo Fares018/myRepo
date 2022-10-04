@@ -19,7 +19,7 @@ app.use(
  * get whatever the client send and resend it back
  */
 let globalVar;
-
+let a = " ";
 app.post("/", (req, res) => {
     globalVar = req.body;
     res.send(globalVar);
